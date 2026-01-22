@@ -53,12 +53,14 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased transition-colors duration-300;
+    overflow-x: hidden;
   }
 }
 
 /* Custom Utilities for Scrollbar, etc. */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
