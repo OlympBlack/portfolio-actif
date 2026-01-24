@@ -68,6 +68,11 @@ export const ProjectDetail = () => {
                                 <i className="fab fa-github mr-2"></i> Code Source
                             </a>
                         )}
+                        {project.links.api && (
+                            <a href={project.links.api} target="_blank" rel="noopener noreferrer" className="flex-1 bg-orange-600 text-white py-3 rounded-lg font-semibold text-center hover:bg-orange-700 transition-colors shadow-lg">
+                                <i className="fas fa-server mr-2"></i> API / Backend
+                            </a>
+                        )}
                         {project.links.design && (
                             <a href={project.links.design} target="_blank" rel="noopener noreferrer" className="flex-1 bg-purple-600 text-white py-3 rounded-lg font-semibold text-center hover:bg-purple-700 transition-colors shadow-lg">
                                 <i className="fab fa-figma mr-2"></i> Maquette
