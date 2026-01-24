@@ -27,9 +27,12 @@ export const Contact = () => {
                     title: "Succès!",
                     text: "Votre message a été envoyé avec succès.",
                     icon: "success",
-                    background: "#1e293b",
-                    color: "#fff",
-                    confirmButtonColor: "#3b82f6"
+                    customClass: {
+                        popup: "bg-card text-card-foreground border border-border rounded-lg shadow-xl",
+                        title: "text-foreground",
+                        confirmButton: "bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
+                    },
+                    buttonsStyling: false
                 });
             })
             .catch((err) => {
@@ -39,9 +42,12 @@ export const Contact = () => {
                     title: "Erreur",
                     text: "Une erreur s'est produite. Veuillez réessayer.",
                     icon: "error",
-                    background: "#1e293b",
-                    color: "#fff",
-                    confirmButtonColor: "#d33"
+                    customClass: {
+                        popup: "bg-card text-card-foreground border border-border rounded-lg shadow-xl",
+                        title: "text-destructive",
+                        confirmButton: "bg-destructive text-destructive-foreground px-4 py-2 rounded-lg hover:bg-destructive/90 transition-colors"
+                    },
+                    buttonsStyling: false
                 });
             });
     };
